@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lavender: #ddd4e5ff;
+  --royal-blue: #5b72c7ff;
+  --jet: #3e3d3dff;
+  --amaranth: #eb124fff;
+}
+
+body {
+  min-height: 200vh;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+  font-family: "Questrial", sans-serif;
+}
+
+a {
+  @apply text-royal-blue;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .carousel-content {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+
+.carousel .carousel-item {
+  position: relative;
+}
